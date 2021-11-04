@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 17px;
+  font-family: arial;
+
+  background: url(assets/background.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.5em;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+}
+
+#header {
+  background: url(assets/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 450px;
+  height: 140px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+h1 {
+  font-size: 25px;
+}
+#container {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+#timer_div,
+#waiting {
+  width: 260px;
+  height: 250px;
+  padding: 168px 0 0 80px;
+  margin-top: -156px;
+  font-size: 25px;
+  background: url(assets/info.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#fail-box {
+  background: url(assets/race.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #fff;
+  width: 500px;
+  height: 300px;
+  margin-top: -39px;
+  margin-left: 438px;
+}
+#win-box {
+  background: url(assets/pop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #fff;
+  width: 500px;
+  height: 450px;
+  padding: 40px;
+  margin-left: 420px;
+  text-align: center;
+}
+#lightBack {
+  margin-left: 550px;
+}
+
+#lightCenter {
+  width: 122px;
+  height: 200px;
+  /* border-radius: 50%;  */
+  position: absolute;
+  margin-top: 180px;
+}
+
+#player456 {
+  background: url(assets/player.png);
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: absolute;
+  left: 70px;
+  bottom: 109px;
+}
+
+#finish {
+  background: url(assets/OIP.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 25px;
+  height: 200px;
+  display: inline-block;
+  position: absolute;
+  left: 1097px;
+  bottom: 109px;
+}
+
+#killerRobot {
+  width: 150px;
+  height: 200px;
+  display: inline-block;
+  position: absolute;
+  left: 1100px;
+  bottom: 109px;
+}
+
+#squidSoldier {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: absolute;
+  left: 1250px;
+
+  bottom: 45px;
+}
+
+.squidSoldier {
+  background: url(assets/squid-soldier.png);
+}
+
+.notLooking {
+  background-image: url(assets/squid-game-not-looking.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: 100px;
+  height: 150px; */
+}
+
+.Looking {
+  background: url(assets/squid-game-looking.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: 100px;
+  height: 150px; */
+}
+
+.green {
+  background: url(assets/green.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.red {
+  background: url(assets/red.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.buttons {
+  margin-top: 100px;
+  margin-left: 490px;
+}
