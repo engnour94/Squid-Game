@@ -8,6 +8,37 @@ let minusTime = 0;
 let sing = new Audio( 'audio.mp3' );
 let kill = new Audio( 'end.mp3' );
 let winSong = new Audio( 'win.mp3' );
+const waitingEle = $( '#waiting' );
+let timer = 5;
+
+
+$( '#Game-Icons' ).hide();
+
+
+
+const timeOut = setInterval( () => {
+  waitingEle.text( timer );
+  waitingEle.css( {
+    'text-indent': '40px',
+    'font-size':'32px'
+ 
+  } );
+  timer--;
+  if ( timer===0 )waitingEle.text( 'Go!' );
+  if ( timer === -1 ) {
+
+    clearInterval( timeOut );
+    setTimeout( () => {
+      $( '.waiting-container' ).hide();
+    }, 0 );
+    $( '#Game-Icons' ).show();
+
+
+    timerId = setInterval( countdown, 1000 );
+
+  }
+
+}, 1000 );
 
 // Countdown
 
@@ -98,35 +129,6 @@ function changeLight() {
 
 
 
-const waitingEle = $( '#waiting' );
-let timer = 5;
-$( '#Game-Icons' ).hide();
-
-
-
-const timeOut = setInterval( () => {
-  waitingEle.text( timer );
-  waitingEle.css( {
-    'text-indent': '40px',
-    'font-size':'32px'
- 
-  } );
-  timer--;
-  if ( timer===0 )waitingEle.text( 'Go!' );
-  if ( timer === -1 ) {
-
-    clearInterval( timeOut );
-    setTimeout( () => {
-      $( '.waiting-container' ).hide();
-    }, 0 );
-    $( '#Game-Icons' ).show();
-
-
-    timerId = setInterval( countdown, 1000 );
-
-  }
-
-}, 1000 );
 
 
 
